@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import index, tweets, filtros
+from .views import index, tweets, estatisticas
 
 urlpatterns = [
-    path('', tweets),
+    path('', index),
     path('tweets', tweets),
-    path('filtros', filtros)
+    path('estatisticas', estatisticas),
 ]
