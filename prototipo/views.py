@@ -10,6 +10,9 @@ def index(request):
 def estatisticas(request):
     return render(request, 'estatisticas.html')
 
+def mapa(request):
+    return render(request, 'mapa.html')
+
 
 def tweets(request):
     tweets = Tweets.objects.all()
